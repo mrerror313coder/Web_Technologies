@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit" method="post">
+        <label for="name"> Name</label>
+        <!--Text Input--><br/><br/>
+        <input type="text" name="fullname" size="40" placeholder="Enter your name" required>
+        <input type="text" pattern="[A-Za-z]{3,}">
+        <!--Password input--><br/><br/>
+        <input type="password" name="pwd" placeholder="Enter Password" minlength="6" maxlength="12" required>
+        <!--Email Input--><br/><br/>
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <!-- Number Input --><br/><br/>
+        <input type="number" name="age" min="1" max="100">
+        <!--Radio buttons--><br/><br/>
+        <input type="radio"  name="radio" value="male">
+        <input type="radio" name="radio" value="female">
+        <!--Checkboxes--><br/><br/>
+        <input type="checkbox" value="reading">
+        <input type="checkbox" value="sports">
+        <!--Date and Time--><br/><br/>
+        <input type="date">
+        <input type="time">
+        <!--File Upload--><br/><br/>
+        <input type="file">
+        <!--Color picker--><br/><br/>
+        <input type="color">
+        <!--buttons--><br/><br/>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        <!--Text area--><br/><br/>
+        <textarea rows="4" cols="20"></textarea>
+        <!--Select(Drop Down)--><br/><br/>
+        <select name="country">
+            <option value="pakistan"> Pakistan</option>
+            <option value="usa"> USA </option>
+            <option value="uk">UK</option>
+        </select>
+        <!--button-->
+        <button type="button">Click Me</button>
+    </form>
+</body>
+</html>

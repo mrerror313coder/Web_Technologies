@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lists</title>
+</head>
+<body>
+    <h1> Ordered Lists</h1>
+    <h2>Subject</h2>
+    <ol>
+        <li>English</li>
+        <li>Urdu</li>
+        <li>Math</li>
+        <li>Science</li>
+        <li>Computer</li>
+    </ol>
+    <!--Manually changing the numbers
+    1) The first way is to set a starting number, using the 
+start attribute. The list will start at this defined number, and continue
+ incrementing by one as usual
+    2) You can also explicitly set a certain list item to a specific number. 
+    Further list items after one with a specified value
+ will continue incrementing by one from that list item's value, ignoring 
+ where the parent list was at.-->
+ <h2>Manually changing the numbers</h2>
+    <ol start="4">
+        <li>English</li>
+        <li>Urdu</li>
+        <li value="3">Math</li>
+        <li>Science</li>
+        <li>Computer</li>
+    </ol>
+
+    <h2>Reversed Numbers List</h2>
+    <!--You can reverse the numbering by adding reversed in your 
+ol element:-->
+    <ol reversed>
+        <li>English</li>
+        <li>Urdu</li>
+        <li>Math</li>
+        <li>Science</li>
+        <li>Computer</li>
+    </ol>
+
+    <h2>Changing the type of numeral</h2>
+        <!-- You can easily change the type of numeral shown in the list item marker by using the 
+    <ol type="1|a|A|i|I">
+    type attribute
+    Type
+    Description
+    Examples
+    1 Default value - Decimal numbers 1,2,3,4
+    a Alphabetically ordered (lowercase) a,b,c,d
+    A Alphabetically ordered (uppercase) A,B,C,D
+    i Roman Numerals (lowercase)
+    i,ii,iii,iv
+    I Roman Numerals (uppercase)
+    You should use 
+    <ul>.
+    I,II,III,IV-->
+    <ol type="I">
+        <li>English</li>
+        <li>Urdu</li>
+        <li>Math</li>
+        <li>Science</li>
+        <li>Computer</li>
+    </ol>
+
+    <!--Unordered List-->
+    <h1>Unordered List</h1>
+    <!--Type attribute is used to change shape of bullet points. 
+    It has three values type="circle/square/disc"-->
+    <ul type="square">
+        <li>English</li>
+        <li>Urdu</li>
+        <li>Math</li>
+        <li>Science</li>
+        <li>Computer</li>
+    </ul>
+
+    <!--Nested lists-->
+    <h1>Nested lists</h1>
+    <ul type="square">
+        <li>English</li>
+        <li>Urdu</li>
+        <li>Math</li>
+            <ul type="circle">
+                <li>English</li>
+                <li>Urdu</li>
+                <li>Math</li>
+                <li>Science</li>
+                <li>Computer</li>
+            </ul>
+        <li>Science</li>
+        <li>Computer</li>
+    </ul>
+    <!--Different List with in a list-->
+    <h2>Different Nested Lists</h2>
+      <ol type="I">
+        <li>English</li>
+        <li>Urdu</li>
+        <li>Math</li>
+            <ul type="square">
+                <li>English</li>
+                <li>Urdu</li>
+                <li>Math</li>
+                <li>Science</li>
+                <li>Computer</li>
+            </ul>
+
+        <li>Science</li>
+        <li>Computer</li>
+    </ol>
+
+    <!--Description List-->
+    <h1>Description List</h1>
+    <!-- A description list (or definition list, as it was called before HTML5) can be created with the dl element. It consists of
+ name-value groups, where the name is given in the dt element, and the value is given in the dd element-->
+
+    <dl>
+        <dt>name 1</dt>
+        <dt>name 2</dt>
+        <dd>value for 1 and 2</dd>
+        <dt>name 3</dt>
+        <dd>value for 3</dd>
+        <dd>value for 3</dd>
+    </dl>
+</body>
+</html>
